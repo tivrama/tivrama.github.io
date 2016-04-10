@@ -6,16 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: TGA Blog
+title: Tivrama
 email: tivrama@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Blogging to keep myself organized through the journey to becoming a Software Engineer.  Please feel free to email me if you have suggestions, or cautions of any pitfalls.   
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://tivrama.github.io/" # the base hostname & protocol for your site
+twitter_username: silence
+github_username:  tivrama
 
 # Build settings
 markdown: kramdown
