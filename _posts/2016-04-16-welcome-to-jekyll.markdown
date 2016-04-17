@@ -1,15 +1,11 @@
 ---
 layout: post
-title:  "Re-creating _.Flatten"
-date:   2016-04-09 13:10:17 -0700
+title:  "Using Recursion"
+date:   2016-04-16 13:10:17 -0700
 categories: jekyll update
 ---
 
-TGA is having us create the basic underscore functions.  A few I can solve on my own.  Some required research.  And some are still unsolved.  
-
-One of my concerns is that I will find a solution on some site like stack overflow, tweak it enough to work, but still not fully understand how it works.  When that happens, I use 'debugger' to go step by step through the functions and see what is going on.
-
-Below is a function for flattening multi-dimensional arrays.  It works up to a few layers deep, and I guess I could make it go much deeper.  But I really don't like the repeated code.  So my next step is to see if I can put it in a loop.  
+Last week I sorta replicated underscore's _.flatten function.  But it used lots of repeated code and only worked as deep as the repetition went (if that makes sense...).  I was planning on tightening it up with a loop.  But this week, TGA's pre-course work focused on recursion.  So I tried it, and my new version works much better.  (Check last week’s blog for my original version.)   
 
 <!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`,  or jekyll serve -' (which actually worked - j.s.)  /blog'which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -18,27 +14,19 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets: -->
 
 {% highlight ruby %}
- var _.flatten = function(nestedArray, result) {
-
+  _.flatten = function(nestedArray, result) {
+    // use reduce to concat each element together
     return _.reduce(nestedArray, function(a, b){
+      // check if an element is a nested array
       if(Array.isArray(b)){
-        b = _.reduce(b, function(c, d){
-          if(Array.isArray(d)){
-            d = _.reduce(d, function(e, f){
-              if(Array.isArray(f)){
-                f = _.reduce(f, function(g, h){
-                  return g.concat(h);
-                }, []);
-              }
-              return e.concat(f);
-            }, []);
-          }
-          return c.concat(d);
-        }, []);
+        // use recursion to cycle through the nested layers
+        return a.concat(_.flatten(b));
       }
-      return a.concat(b);
+      // otherwise, concat
+      return a.concat(b); 
     }, []);
-  }
+
+  };
 
   var multiDimenArray = [1, [2], [3, [[[4]]]]];
   var testFlatten = _.flatten(multiDimenArray);
