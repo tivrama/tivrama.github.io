@@ -8,7 +8,7 @@ permalink: /about/
 
 <!-- ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")     EXAMPLE -->
   
-![](http://tivrama.github.io/_includes/JoelAndPenny.JPG) 
+<!-- ![](http://tivrama.github.io/_includes/JoelAndPenny.JPG)  -->
 
 
 <!-- http://tivrama.github.io/_includes/JoelAndPenny.JPG "Joel and Penny")
