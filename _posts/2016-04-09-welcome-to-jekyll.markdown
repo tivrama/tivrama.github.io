@@ -1,15 +1,13 @@
 ---
 layout: post
-title:  "Re-creating _.Flatten"
+title:  "Re-creating Underscore's _.Flatten"
 date:   2016-04-09 13:10:17 -0700
 categories: jekyll update
 ---
 
-TGA is having us create the basic underscore functions.  A few I can solve on my own.  Some required research.  And some are still unsolved.  
+One thing that I have found interesting is nested collections.  I got into this on [Reactivex.oi](http://reactivex.io/learnrx/).  That site guides users through the use of functions such as forEach, map, reduce and filter to get access to nested arrays and objects.  And it actually has you build versions of some of these functions.  
 
-One of my concerns is that I will find a solution on some site like stack overflow, tweak it enough to work, but still not fully understand how it works.  When that happens, I use 'debugger' to go step by step through the functions and see what is going on.
-
-Below is a function for flattening multi-dimensional arrays.  It works up to a few layers deep, and I guess I could make it go much deeper.  But I really don't like the repeated code.  So my next step is to see if I can put it in a loop.  
+Below is a function for flattening multi-dimensional arrays.  It works up to a few layers deep, and I guess I could make it go much deeper.  But I really don't like the repeated code.  So my next step is to see if I can put it in a loop or find some other clever means of getting rid of re-invoking reduce.  
 
 <!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`,  or jekyll serve -' (which actually worked - j.s.)  /blog'which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -18,7 +16,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets: -->
 
 {% highlight ruby %}
- var _.flatten = function(nestedArray, result) {
+  var _.flatten = function(nestedArray, result) {
 
     return _.reduce(nestedArray, function(a, b){
       if(Array.isArray(b)){

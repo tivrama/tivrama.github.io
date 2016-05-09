@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Using Recursion"
+title:  "Using Recursion to Re-create Underscore's _.Flatten"
 date:   2016-04-16 13:10:17 -0700
 categories: jekyll update
 ---
 
-Last week I sorta replicated underscore's _.flatten function.  But it used lots of repeated code and only worked as deep as the repetition went (if that makes sense...).  I was planning on tightening it up with a loop.  But this week, TGA's pre-course work focused on recursion.  So I tried it, and my new version works much better.  (Check last week’s blog for my original version.)   
+Last week I sorta replicated underscore's _.flatten function.  But it used lots of repeated code and only worked as deep as the repetition went.  I was planning on tightening it up with a loop.  But this week, I am learning about recursion.  So I tried it, and my new version works much better.  (Check last week’s blog for my original version.)   
 
 <!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`,  or jekyll serve -' (which actually worked - j.s.)  /blog'which launches a web server and auto-regenerates your site when a file is updated.
 

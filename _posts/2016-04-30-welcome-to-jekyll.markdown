@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  "More Recursion Fodder"
+title:  "More Recursion Fodder - Re-creating Underscore's _.difference"
 date:   2016-04-30 13:10:17 -0700
 categories: jekyll update
 ---
 
-One of the Underscore functions we had to re-create for TGA is _.difference.  It takes multiple arrays and returns the elements on the first array that are unique to that first array.  The solution below works, but falls into the same issues I had when I first solved _.flatten.  There is repeated code and it can only handle as many arrays as you make loops for.  I know this can be made better with recursion. So if I find time, I will do that for next week's blog.  
-
-But... It is the first day of class on Monday.  I think I am going to be pretty busy.  I think of it as boarding a submarine headed out to sea for three months.
-
+An interesting function that goes through multiple arrays is Underscore's _.difference.  It takes multiple arrays and returns the elements on the first array that are unique to that first array.  The solution below works, but falls into the same issues I had when I first made a version of _.flatten.  There is repeated code and it can only handle as many arrays as you make loops for.  I know this can be made better with recursion. So if I find time, I will do that in a future blog.  
 
 {% highlight ruby %}
   _.difference = function(array) {

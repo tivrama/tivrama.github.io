@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tivrama.github.io/" # the base hostname & protocol for your site
-twitter_username: silence
+# twitter_username: silence
 github_username:  tivrama
 
 # Build settings
