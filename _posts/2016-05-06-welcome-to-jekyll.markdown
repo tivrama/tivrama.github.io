@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stack and Queue"
-date:   2016-05-06 12:00:17 -0700
+date:   2016-05-12 12:00:17 -0700
 categories: jekyll update
 ---
 
