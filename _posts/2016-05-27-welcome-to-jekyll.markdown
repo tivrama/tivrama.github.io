@@ -16,13 +16,13 @@ categories: jekyll update
 [  [  ['hello', 'world'], ['foo', 'bar'] ], [ [  ] ], [  ['good', 'night']  ]  ]
 1  2  3[0]      [1]       3[0]    [1]       2 3       2  3[0]     [1]
 
-  [0]                     [1]              [2]            [3]         
+  [0]hashed index                          [1]       [2]       
 
 {% endhighlight %}
 
 1.  The entire hash table as an array.
-2.  Bucket which holds a tuple containing input data.  A bucket can have more than one tuple if a collision occurs.   
-3.  Tuple that hold the actual key value pairs.
+2.  Bucket which holds a tuple containing input data.  A bucket can have more than one tuple if a collision occurs.  Note: an example of a collision at the fitst hash index with two tuples in one bucket.  
+3.  Tuple that holds the actual key value pairs.
 
 ---
 
