@@ -21,7 +21,7 @@ categories: jekyll update
 {% endhighlight %}
 
 1.  The entire hash table as an array.
-2.  Bucket which holds a tuple containing input data.  A bucket can have more than one tuple if a collision occurs.  Note: an example of a collision at the fitst hash index with two tuples in one bucket.  
+2.  Bucket which holds a tuple containing input data.  A bucket can have more than one tuple if a collision occurs.  Note: an example of a collision at the first hash index with two tuples in one bucket.  
 3.  Tuple that holds the actual key value pairs.
 
 ---
