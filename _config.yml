@@ -7,9 +7,9 @@
 
 # Site settings
 title: Joel Schoolnik
-email: tivrama@yahoo.com
+email: jschoolnik@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Blogging to keep myself organized through the journey to becoming a Software Engineer.  Please feel free to email me if you have suggestions, or cautions of any pitfalls.   
+  There is a lot of interesting stuff out there.  Check out some of my blogs and see!  
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tivrama.github.io/" # the base hostname & protocol for your site

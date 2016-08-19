@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Total noob here.  Never even blogged before.  But I am learning fast.  I came from the supply chain world and now I want to try something new.  So I am transitioning from moving and storing pallets to moving and storing data.  
+I am a software engineer.  I love the MEAN stack, but enjoy playing with other frameworks too.  Right now I am making lots of cool web based toys.    
 
 <!-- ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")     EXAMPLE -->
   
