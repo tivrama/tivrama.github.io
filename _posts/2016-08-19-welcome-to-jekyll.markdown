@@ -96,7 +96,7 @@ var isItPalindrome = function(word) {
   };
 
   word = word.toLowerCase()
-  	.replace(/[\s`~!@#$%^&*0-9()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+    .replace(/[\s`~!@#$%^&*0-9()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
   var match = [];
 
   var checkFor = DNA;
@@ -112,18 +112,6 @@ var isItPalindrome = function(word) {
   match = match.join('');
 
   return match === word;
-};
-
-var lookForNucleotides = function(entry) {
-  var checker = false;
-  var val;
-  for (var i = 0; i < entry.length; i++) {
-    val = entry[i].toLowerCase();
-    if (val !== 'a' && val !== 't' && val !== 'u' && val !== 'c' && val !== 'g') {
-      checker = true;
-    }
-  }
-  return checker;
 }; 
 
 {% endhighlight %}
