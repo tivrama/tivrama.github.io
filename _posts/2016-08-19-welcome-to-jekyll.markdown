@@ -116,6 +116,8 @@ var isItPalindrome = function(word) {
 
 {% endhighlight %}
 
+So what next?  How about an app that make palindromes.  But we would have to define some parameters.  For example, does it have to make some kind of sense when read?  If so, what kind of grammatical algorithm would be needed?  A good test for this my be to start with word based palindromes (as opposed to letter based).  More on that soon.  
+
 I hope you enjoy palindromes as much as I do.  I'll leave you with this deep thought.
 
 "Do nine men interpret? Nine men, I nod."
