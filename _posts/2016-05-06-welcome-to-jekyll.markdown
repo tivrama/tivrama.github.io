@@ -12,6 +12,7 @@ I actually was familiar with the acronyms FIFO and LIFO from my last job, workin
 For a basic Stack to work, one needs to have a method to add an item to the top (push), remove an item (pop), and keep track of the size of the stack with an index.  The index if very important.  In a practical sense, we don't want our computer to send a forklift to a location that is empty.  
 
 Here is a simple representation of a stack.
+
 ```
 // Stack could be an location in a warehouse. 
 // It must have an index that tracks how many 
@@ -36,6 +37,7 @@ For a Queue, one would add pallets to one end of a location, and remove from the
 Like stack, There is an index which is updated when a pallet is added.  But it helps to have another running index which tracks the first pallet.  This way, the count of the pallets can be determined by subtracting one from the other.  
 
 Here is a simple Queue.
+
 ```
 Queue = { index = 0, runningIndex = 0; }
 

@@ -14,6 +14,7 @@ So the sequence goes like this:
 The way it works is 0 + 1 = 1, 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, and so on.  If n is the generation, you can find the number after the nth generation by making a loop.  
 
 Here is the version which uses a loop: 
+
 ```
   var fibonacciNumber= function(n){
     var counter,
@@ -30,11 +31,13 @@ Here is the version which uses a loop:
     }
     return next;
   }
+
 ```
 
 But a more interesting way of doing it (to me, anyways), is to use the original formula from which the sequence gets its name.  (Fn = Fn−1 + Fn−2).  Below are some working examples of how to implement the formula in code.  
 
 This is a fairly standard version, and the one I got from CodeAcademy.  
+
 ```
   var fibonacciNumber = function(n){
       if(n <= 2) {
@@ -46,6 +49,7 @@ This is a fairly standard version, and the one I got from CodeAcademy.
 
 
 Here is another version:
+
 ```
   var fibonacciNumber = function(n){
     if(n === 0) {
@@ -61,6 +65,7 @@ Here is another version:
 ```
 
 This is the version I saved after helpful guidance from the folks at TGA.  It has the advantage of logging a count to see where the current depth of the recursion is.  Hint, don't make n higher than 40, or you'll probably be restarting your browser:
+
 ```
   var fibonacciNumber= function(n){
     var count = 0;
@@ -82,6 +87,7 @@ This is the version I saved after helpful guidance from the folks at TGA.  It ha
 ```
 
 These all do about the same thing.  They use recursion to count down from n to one, and then add up all the ones.  It works by making trees and then adding up the branches.  Here is what it might look like: 
+
 ```
   //to the third generation:
   (2 + 3 = 5)
