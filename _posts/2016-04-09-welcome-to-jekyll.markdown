@@ -15,7 +15,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets: -->
 
-{% highlight ruby %}
+```
   var _.flatten = function(nestedArray, result) {
 
     return _.reduce(nestedArray, function(a, b){
@@ -41,7 +41,7 @@ Jekyll also offers powerful support for code snippets: -->
   var multiDimenArray = [1, [2], [3, [[[4]]]]];
   var testFlatten = _.flatten(multiDimenArray);
   console.log(testFlatten); //-->[1, 2, 3, 4]
-{% endhighlight %}
+```
 
 
 

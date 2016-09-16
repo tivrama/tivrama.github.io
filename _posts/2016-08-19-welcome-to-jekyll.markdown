@@ -13,7 +13,7 @@ Letter based palindromes are by far the most well known.  A famous example is "G
 
 For letter based palindromes, the heart of the test is in the code below.  I also check for letters that repeat too many times in a row, and then send all the words to an online dictionary to verify that they are real words.  But essentially, the code below uses regex to remove all non-letter chars, and then make a copy of the user's input, reverses it, and compares the two.  
 
-{% highlight ruby %}
+```
 
 var isItReallyAPalindrome = function(userAttempt) {
 
@@ -26,11 +26,11 @@ var isItReallyAPalindrome = function(userAttempt) {
 
 };      
 
-{% endhighlight %}
+```
 
 What about binary?  Simply put, it is  number that reads the same backwards.  For example '101101'.  That isn't too hard to test.  But if you happen to have a reeeally long one, you can test it with a function on on EmordnilaPalindrome.  Quick question:  is there a decimal number that is a palindrome (i.e. 454) which is also a palindrome in binary?  The only ones from 0 to 10 million are '0' and '1'.  But if you want to burn out your processor, you can run this function with as high a range as you may want.  
 
-{% highlight ruby %}
+```
 
 var bothBinAndDecPalindrome = function(runUpToN) {
 
@@ -72,12 +72,12 @@ var bothBinAndDecPalindrome = function(runUpToN) {
   return palin;
 };    
 
-{% endhighlight %}
+```
 
 
 One thing I learned about when researching palindromes, is that they exist in out genetic code.  Important features in our code are sometimes in palindromes.  This may prevent degradation with copying our DNA.  Check out this [wikipedia article](https://en.wikipedia.org/wiki/Palindromic_sequence).  Each nucleotide has a pair or opposite.  It is those pairs, which when read backwards, must match the original. To check that in a function, I just made an object with the pairs. 
 
-{% highlight ruby %}
+```
 
 var isItPalindrome = function(word) {
 
@@ -114,7 +114,7 @@ var isItPalindrome = function(word) {
   return match === word;
 }; 
 
-{% endhighlight %}
+```
 
 So what next?  How about an app that make palindromes.  But we would have to define some parameters.  For example, does it have to make some kind of sense when read?  If so, what kind of grammatical algorithm would be needed?  A good test for this my be to start with word based palindromes (as opposed to letter based).  More on that soon.  
 

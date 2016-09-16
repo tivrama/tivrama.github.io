@@ -7,7 +7,7 @@ categories: jekyll update
 
 An interesting function that goes through multiple arrays is Underscore's _.difference.  It takes multiple arrays and returns the elements on the first array that are unique to that first array.  The solution below works, but falls into the same issues I had when I first made a version of _.flatten.  There is repeated code and it can only handle as many arrays as you make loops for.  I know this can be made better with recursion. So if I find time, I will do that in a future blog.  
 
-{% highlight ruby %}
+```
   _.difference = function(array) {
     //make a cashe to store items
     var cashe = array;
@@ -42,7 +42,7 @@ An interesting function that goes through multiple arrays is Underscore's _.diff
     return cashe;
 
   };
-{% endhighlight %}
+```
 
 
 

@@ -11,14 +11,14 @@ categories: jekyll update
 - Data is added and retrieved in constant time.
 - No need for reassignment of indexes if a value is removed or added.  Time complexity is constant O(1).
 
-{% highlight ruby %}
+```
 
 [  [  ['hello', 'world'], ['foo', 'bar'] ], [ [  ] ], [  ['good', 'night']  ]  ]
 1  2  3[0]      [1]       3[0]    [1]       2 3       2  3[0]     [1]
 
   [0]hashed index                          [1]       [2]       
 
-{% endhighlight %}
+```
 
 1.  The entire hash table as an array.
 2.  Bucket which holds a tuple containing input data.  A bucket can have more than one tuple if a collision occurs.  Note: an example of a collision at the first hash index with two tuples in one bucket.  
@@ -33,7 +33,7 @@ categories: jekyll update
 - Data is added and retrieved in constant time O(1), but searched in linear time O(n).
 - Length of collection changes to suit the number of objects.
 
-{% highlight ruby %}
+```
 
 myList.head = {value: 'hello',
                next:  {value: 'world' 
@@ -43,7 +43,7 @@ myList.head = {value: 'hello',
 
                1       2      2      3
 
-{% endhighlight %}           
+```           
 
 
 1.  Head is the first value and is saved to a var called 'head'.
@@ -61,7 +61,7 @@ myList.head = {value: 'hello',
 - The world wide web is a collection of nodes with links acting like edges. 
 - Search time complexity is akin to linked list at O(n).  Adding a node is also similar to linked list at constant O(1).
 
-{% highlight ruby %}
+```
 
 1    {value: 'hello', edge: ['world']}
 
@@ -74,7 +74,7 @@ myList.head = {value: 'hello',
 
 4        {value: 'bar', edge: ['foo', 'hello', 'world']}
 
-{% endhighlight %}           
+```          
 
 
 1.  Node with the value 'hello'.  Has and edge for the node with the value of 'world'.
@@ -90,7 +90,7 @@ myList.head = {value: 'hello',
 - Nodes have a value and 0, 1 or 2 children.  If there is a child on the left branch, its value must be lower than the current node's value.  A branch on the right must have a node with a greater value than the current node.  
 - Search time is logarithmic - O(log(n)).
 
-{% highlight ruby %}
+```
 
 1   {value: 6,
 2L   left: {value: 4,
@@ -119,7 +119,7 @@ myList.head = {value: 'hello',
     }
 
 
-{% endhighlight %}           
+```           
 
 
 1.  Root tree.
@@ -136,7 +136,7 @@ myList.head = {value: 'hello',
 - Collection of objects.  The objects can belong to more than one set at a time;
 - Objects belonging to more than one set are intersecting.  
 
-{% highlight ruby %}
+```
 
 1   obj1 = {hello: 'world'}
     obj2 = {foo: 'bar'}
@@ -147,7 +147,7 @@ myList.head = {value: 'hello',
     b = {set: [obj2, obj3]}
  
                3
-{% endhighlight %}           
+```          
 
 
 1.  Some objects.
@@ -163,14 +163,14 @@ myList.head = {value: 'hello',
 - There is no set limit for the number of children a tree can have.
 - Searches are done with recursive logarithms.  Time complexity is quadratic O(n3).
 
-{% highlight ruby %}
+```
 
 1    {value: 'hello', 
 2     children: [{value: 'world',   {value: 'foo'}]}
 3                 children: []}      children: [{value: 'bar', {value: 'baz'}]
                                                  children: []}  children: []}
 
-{% endhighlight %}           
+```          
 
 
 1.  Parent tree has two children, 'world' and 'foo'.

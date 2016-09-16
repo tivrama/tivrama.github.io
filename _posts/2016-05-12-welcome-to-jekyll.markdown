@@ -18,28 +18,28 @@ Linked list is a data structure that took me a while to understant exactly what 
 
 For me, understanding how a Linked List works was dificult because I didn't really see what the individual objects like.
 
-{% highlight ruby %}
+```
 var myList = {};
 myList.head = null
 myList.tail = null
-{% endhighlight %}
+```
 
 Making the first object:
 
-{% highlight ruby %}
+```
 myList.head = {value: 'Hello',
                next: null}
 myList.tail = {value: 'Hello',
                next: null };
-{% endhighlight %}
+```
 
 Inserting the second object.  The tail is reassigned.  Tail will alway have a 'next' value of null.
 
-{% highlight ruby %}
+```
 myList.head = {value: 'Hello',
                next: {value: 'World',    
                       next: null }}
-{% endhighlight %}
+```
 
 Inserting a third object
 
