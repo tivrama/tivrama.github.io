@@ -122,8 +122,3 @@ I hope you enjoy palindromes as much as I do.  I'll leave you with this deep tho
 
 "Do nine men interpret? Nine men, I nod."
 
-
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
