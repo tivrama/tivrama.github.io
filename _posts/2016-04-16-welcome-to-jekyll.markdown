@@ -14,7 +14,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets: -->
 
 ```
-  _.flatten = function(nestedArray, result) {
+  _.flatten = function(nestedArray) {
     // use reduce to concat each element together
     return _.reduce(nestedArray, function(a, b){
       // check if an element is a nested array
