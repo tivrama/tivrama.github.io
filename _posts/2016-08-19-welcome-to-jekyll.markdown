@@ -27,6 +27,23 @@ var isItReallyAPalindrome = function(userAttempt) {
 };      
 
 ```
+Or perhaps, to save some time - save this onto the String prototype:
+
+```
+
+String.prototype.isItReallyAPalindrome = function() {
+  var userAttempt = '';
+  userAttempt = this.toLowerCase()
+    .replace(/[\s`~!@#$%^&*0-9()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+
+  var tpmettAresu = userAttempt.split('').reverse().join('');
+
+  return userAttempt === tpmettAresu;
+
+};      
+
+```
+
 
 What about binary?  Simply put, it is  number that reads the same backwards.  For example '101101'.  That isn't too hard to test.  But if you happen to have a reeeally long one, you can test it with a function on on EmordnilaPalindrome.  Quick question:  is there a decimal number that is a palindrome (i.e. 454) which is also a palindrome in binary?  The only ones from 0 to 10 million are '0' and '1'.  But if you want to burn out your processor, you can run this function with as high a range as you may want.  
 

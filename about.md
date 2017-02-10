@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a software engineer.  I love the MEAN stack, but enjoy playing with other frameworks too.  Right now I am making lots of cool web based toys.    
+I am a full stack software engineer experienced in JavaScript, React, Redux, Angular, Node, Express, Mongo, and a host of associated JavaScript libraries.  But as much as I love walks on the beach, coding, and building full stack web apps, I also love data structures.  The blogs here will mostly address Data Structures and basic algorithmic challenges.  
 
 <!-- ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")     EXAMPLE -->
   
